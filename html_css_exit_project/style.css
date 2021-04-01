@@ -1,0 +1,274 @@
+/* Color Scheme: */
+/* https://colorpeek.com/#9b7d61,a5876d,739350,99af66,bfc796,d8e0c9 */
+/* https://colorpeek.com/#9b7d61,d8e0c9,739350,99af66,bfc796,a5876d */
+/* ------------------------------------------------ */
+/* Basic Setup */
+/* ------------------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  color: #99af66;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+}
+
+/* ------------------------------------------------ */
+/* Reusable Components */
+/* ------------------------------------------------ */
+
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-offwhite {
+  background-color: #eeeeee;
+}
+
+.space-hori {
+  padding: 0 30px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > * {
+  text-align: center;
+}
+
+.flex-item-1-2 {
+  flex-basis: 50%;
+}
+.flex-item-1-3 {
+  flex-basis: 33%;
+}
+.flex-item-2-3 {
+  flex-basis: 66%;
+}
+.flex-item-1-4 {
+  flex-basis: 25%;
+}
+
+.row {
+  max-width: 1140;
+  margin: 0 auto;
+}
+
+section {
+  padding: 5%;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #bfc796;
+
+  padding-bottom: 1px;
+  border-bottom: 1px solid #bfc796;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+a:active,
+a:hover {
+  color: #739350;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+}
+
+/* Buttons */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px 15px;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-strong:link,
+.btn-strong:visited {
+  background-color: #bfc796;
+  border: 3px solid #bfc796;
+  color: #739350;
+}
+.btn-strong:hover,
+.btn-strong:active {
+  background-color: #739350;
+  border: 6px solid #d8e0c9;
+  color: #d8e0c9;
+}
+
+.btn-soft:link,
+.btn-soft:visited {
+  border: 3px solid #739350;
+  color: #739350;
+}
+.btn-soft:hover,
+.btn-soft:active {
+  border: 6px solid #bfc796;
+  color: #bfc796;
+}
+
+/* Headers */
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 240%;
+  word-spacing: 4px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px black;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  color: #a5876d;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------------------------ */
+/* Hero Zone */
+/* ------------------------------------------------ */
+
+.hero-splash {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(src/img/Kiwis.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------ */
+/* Always-sticky Nav Bar */
+/* ------------------------------------------------ */
+
+.page-top-spacer {
+  height: 30px;
+  background-color: orangered;
+}
+
+.main-nav {
+  margin-top: 0px;
+  height: 30px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  font-size: 80%;
+  padding: 2px 0px;
+  color: #739350;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #9b7d61;
+}
+
+/* Features */
+
+.section-product-features {
+  background-color: #d8e0c9;
+}
+
+/* Reviews */
+
+.section-reviews h2 {
+  color: #bfc796;
+}
+.section-reviews {
+  background-color: #9b7d61;
+  background-size: cover;
+  color: #d8e0c9;
+  background-attachment: fixed;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: 130%;
+  position: relative;
+  margin-top: 40px;
+}
+
+cite {
+  font-size: 80%;
+  margin-top: 20px;
+  display: block;
+}
+
+cite img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Individual Info Sections */
+
+.long-copy {
+  margin-top: 5%;
+  margin-bottom: 30px;
+  height: 90%;
+  line-height: 145%;
+  padding: 2%;
+}
+
+.img-container {
+  margin: 2%;
+}
+
+/* form */
+
+.section-inquiry-contact .row {
+  margin: 10px 0;
+}
+
+.section-inquiry-contact .flex-container > .flex-item-1-3 {
+  text-align: right;
+}
+
+.section-inquiry-contact .flex-container > .flex-item-2-3 {
+  margin-left: 30px;
+  text-align: left;
+}
